@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Jquery -->
+    <script src="jquery-3.6.0.js"></script>
+    <script src="scripts/script.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+
+    <title>TP01 MET02</title>
+  </head>
+  <body class="bg_light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <h2>Formulaire pour le TP01 du module MET02</h2>
+            <br />
+            <h3>Formulaire utilisateur à remplir</h3>
+        </div>
+        <form id="form">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="prenom">Prénom</label>
+              <input type="text" class="form-control" id="prenom" pattern="^[a-zA-Zéèïêëö'.-]{2,25}$" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="nom">Nom</label>
+              <input type="text" class="form-control" id="nom" pattern="^[a-zA-Zéèïêëö'. -]{2,25}$" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="adresse">Adresse</label>
+            <input type="text" class="form-control" id="adresse" placeholder="123 Rue Bidule" pattern="^[a-zA-Zéèïêëö'. 0-9-]*$"required>
+          </div>
+          <div class="mb-3">
+            <label for="cp">Code Postal</label>
+            <input type="text" class="form-control" id="cp" placeholder="67200" pattern="^[0-9]{5}$" required>
+          </div>
+          <div class="mb-3">
+            <label for="ville">Ville</label>
+            <input type="text" class="form-control" id="ville" placeholder="Strasbourg" pattern="^[a-zA-Zéèïêëö'. -]*$" required>
+          </div>
+          <div class="mb-3">
+            <label for="tel">Téléphone</label>
+            <input type="text" class="form-control" id="tel" placeholder="0612345678" pattern="^[0-9]{10}$" required>
+          </div>
+          <div class="mb-3">
+            <label for="civilite">Civilite</label>
+            <select class="custom-select d-block" id="civilite" required>
+              <option value>Choisir...</option>
+              <option>Mr</option>
+              <option>Mme</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="login">Nom d'utilisateur</label>
+            <input type="text" class="form-control" id="login" pattern="^[0-9a-zA-Z.-]*$" required>
+          </div>
+          <div class="mb-3">
+            <label for="passwd">Mot de passe</label>
+            <input type="password" class="form-control" id="passwd" pattern="^.*$" required>
+          </div>
+          <div class="mb-3">
+            <label for="conf">Confirmation du mot de passe</label>
+            <input type="password" class="form-control" id="conf" pattern="^.*$" required>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block mb-4" type="submit">
+            Envoyer
+          </button>          
+        </form>
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p>Théo Welsch</p>
+        </footer>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
